@@ -56,6 +56,8 @@ converts image to feature vector
 4. *Retrieve Data*: System gathers all related products
 5. *Generate Analysis*: Llama model creates detailed fashion description
 6. *Display Results*: Professional recommendations with product links and prices
+
+## Architecture
    User Image
    │
    ▼
