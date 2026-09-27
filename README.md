@@ -62,23 +62,23 @@ converts image to feature vector
    │
    ▼
 ┌──────────────────┐
-│  ImageProcessor  │  ResNet50 → base64 + feature vector
+│  ImageProcessor  │  (ResNet50 → base64 + feature vector)
 └──────────────────┘
    │
    ▼
 ┌──────────────────┐
-│  Vector Search   │  cosine similarity vs dataset embeddings
+│  Vector Search   │  (cosine similarity vs dataset embeddings)
 └──────────────────┘
    │
    ▼
 ┌──────────────────┐
-│  LlamaVision     │  image + retrieved context → analysis
+│  LlamaVision     │  (image + retrieved context → analysis)
 │  Service         │
 └──────────────────┘
    │
    ▼
 ┌──────────────────┐
-│  Gradio UI       │  upload, examples, markdown output
+│  Gradio UI       │  (upload, examples, markdown output)
 └──────────────────┘
 ## Dataset
 Fashion items sourced from Taylor Swift's iconic outfits, including item names, prices, and purchase links.
