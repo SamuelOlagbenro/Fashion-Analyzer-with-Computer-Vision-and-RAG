@@ -56,6 +56,28 @@ converts image to feature vector
 4. *Retrieve Data*: System gathers all related products
 5. *Generate Analysis*: Llama model creates detailed fashion description
 6. *Display Results*: Professional recommendations with product links and prices
+   User Image
+   │
+   ▼
+┌──────────────────┐
+│  ImageProcessor  │  ResNet50 → base64 + feature vector
+└──────────────────┘
+   │
+   ▼
+┌──────────────────┐
+│  Vector Search   │  cosine similarity vs dataset embeddings
+└──────────────────┘
+   │
+   ▼
+┌──────────────────┐
+│  LlamaVision     │  image + retrieved context → analysis
+│  Service         │
+└──────────────────┘
+   │
+   ▼
+┌──────────────────┐
+│  Gradio UI       │  upload, examples, markdown output
+└──────────────────┘
 ## Dataset
 Fashion items sourced from Taylor Swift's iconic outfits, including item names, prices, and purchase links.
 ## License
